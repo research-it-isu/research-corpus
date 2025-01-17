@@ -4,8 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Исследовательский корпус</title>
-  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Подключение Font Awesome -->
   <style>
+    body, html {
+      overflow-x: hidden; /* Предотвращает горизонтальную прокрутку */
+    }
     .color-header {
       background-color: #232a83;
     }
@@ -17,153 +21,181 @@
       color: #0056b3;
       text-decoration: underline;
     }
+    .file-icon {
+      margin-right: 5px; /* Отступ между иконкой и текстом */
+    }
+    @media (max-width: 767px) {
+      .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header class="color-header text-white p-4">
-    <div class="container" style="align:center">
+    <div class="container text-center">
       <h1>Исследовательский корпус</h1>
     </div>
   </header>
 
   <div class="container mt-5">
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-12">
         <p>
-          Исследовательский корпус включает в себя аннотации фрагментов интервью, записанных в 2012 – 2014 гг. в рамках проекта «Русские говоры Прибайкалья в синхронии и диахронии» (Баргузинский район республики Бурятия). Используемая система аннотирования является упрощенным вариантом транскрипции, предложенным в [Коротаев, <a href="https://multidiscourse.ru/data/ann/pears_vocal%20annotation.pdf">https://multidiscourse.ru/data/ann/pears_vocal%20annotation.pdf</a>], адаптированным в соответствии с целями исследования. Корпус состоит из фрагментов пяти интервью, в которых зафиксирована речь одиннадцати человек (двух мужчин и десяти женщин). Общая длительность звучания – 44 мин. 13 сек., объем корпуса – около 7700 словоупотреблений и более 2600 ЭДЕ).  </p>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Кодовое обозначение</th>
-              <th>Длительность</th>
-              <th>Число словоупотреблений</th>
-              <th>Число ЭДЕ</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><a class="file-link" href="#group-VI">ВИ</a></td>
-              <td>8 мин. 11 сек.</td>
-              <td>1464</td>
-              <td>492</td>
-            </tr>
-			<tr>
-              <td><a class="file-link" href="#group-LS-NV1">ЛС, НВ1</a></td>
-              <td>3 мин. 16 сек.</td>
-              <td>534</td>
-              <td>208</td>
-            </tr>
-			<tr>
-              <td><a class="file-link" href="#group-LS-NV2">ЛС, НВ2</a></td>
-              <td>3 мин. 10 сек.</td>
-              <td>467</td>
-              <td>165</td>
-            </tr>
-			<tr>
-              <td><a class="file-link" href="#group-LS-NV3">ЛС, НВ3</a></td>
-              <td>14 мин. 09 сек.</td>
-              <td>2648</td>
-              <td>988</td>
-            </tr>
-			<tr>
-              <td><a class="file-link" href="#group-NA">НА</a></td>
-              <td>5 мин. 12 сек.</td>
-              <td>861</td>
-              <td>271</td>
-            </tr>
-			<tr>
-              <td><a class="file-link" href="#group-NI">НИ</a></td>
-              <td>5 мин. 07 сек.</td>
-              <td>853</td>
-              <td>271</td>
-            </tr>
-			<tr>
-              <td><a class="file-link" href="#group-TM">ТМ</a></td>
-              <td>5 мин. 00 сек.</td>
-              <td>900</td>
-              <td>254</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>Ниже представлены аудиофайлы в формате wav и их аннотации в формате xls
-          и textgrid.</p>
-		<hr>
-		<div class="row">
-          <div class="col-md-12">
-            <h4 id="group-VI">ВИ</h4>
-            <ul>
-              <li><a class="file-link" href="#">Файл xls</a></li>
-              <li><a class="file-link" href="#">Файл textgrid</a></li>
-            </ul>
-          </div>
+          Исследовательский корпус включает в себя аннотации фрагментов интервью, записанных в 2012 – 2014 гг. в рамках проекта «Русские говоры Прибайкалья в синхронии и диахронии» (Баргузинский район республики Бурятия). Используемая система аннотирования является упрощенным вариантом транскрипции, предложенным в [Коротаев, <a href="https://multidiscourse.ru/data/ann/pears_vocal%20annotation.pdf">https://multidiscourse.ru/data/ann/pears_vocal%20annotation.pdf</a>], адаптированным в соответствии с целями исследования. Корпус состоит из фрагментов пяти интервью, в которых зафиксирована речь одиннадцати человек (двух мужчин и десяти женщин). Общая длительность звучания – 44 мин. 13 сек., объем корпуса – около 7700 словоупотреблений и более 2600 ЭДЕ.
+        </p>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Кодовое обозначение</th>
+                <th>Длительность</th>
+                <th>Число словоупотреблений</th>
+                <th>Число ЭДЕ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a class="file-link" href="#group-VI">ВИ</a></td>
+                <td>8 мин. 11 сек.</td>
+                <td>1464</td>
+                <td>492</td>
+              </tr>
+              <tr>
+                <td><a class="file-link" href="#group-LS-NV1">ЛС, НВ1</a></td>
+                <td>3 мин. 16 сек.</td>
+                <td>534</td>
+                <td>208</td>
+              </tr>
+              <tr>
+                <td><a class="file-link" href="#group-LS-NV2">ЛС, НВ2</a></td>
+                <td>3 мин. 10 сек.</td>
+                <td>467</td>
+                <td>165</td>
+              </tr>
+              <tr>
+                <td><a class="file-link" href="#group-LS-NV3">ЛС, НВ3</a></td>
+                <td>14 мин. 09 сек.</td>
+                <td>2648</td>
+                <td>988</td>
+              </tr>
+              <tr>
+                <td><a class="file-link" href="#group-NA">НА</a></td>
+                <td>5 мин. 12 сек.</td>
+                <td>861</td>
+                <td>271</td>
+              </tr>
+              <tr>
+                <td><a class="file-link" href="#group-NI">НИ</a></td>
+                <td>5 мин. 07 сек.</td>
+                <td>853</td>
+                <td>271</td>
+              </tr>
+              <tr>
+                <td><a class="file-link" href="#group-TM">ТМ</a></td>
+                <td>5 мин. 00 сек.</td>
+                <td>900</td>
+                <td>254</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-		<hr>
-		<div class="row">
-          <div class="col-md-12">
-            <h4 id="group-LS-NV1">ЛС, НВ1</h4>
-            <ul>
-              <li><a class="file-link" href="#">Файл xls</a></li>
-              <li><a class="file-link" href="#">Файл textgrid</a></li>
-            </ul>
-          </div>
-        </div>
-		<hr>
-		<div class="row">
-          <div class="col-md-12">
-            <h4 id="group-LS-NV2">ЛС, НВ2</h4>
-            <ul>
-              <li><a class="file-link" href="#">Файл xls</a></li>
-              <li><a class="file-link" href="#">Файл textgrid</a></li>
-            </ul>
-          </div>
-        </div>
-		<hr>
-		<div class="row">
-          <div class="col-md-12">
-            <h4 id="group-LS-NV3">ЛС, НВ3</h4>
-            <ul>
-              <li><a class="file-link" href="#">Файл xls</a></li>
-              <li><a class="file-link" href="#">Файл textgrid</a></li>
-            </ul>
-          </div>
-        </div>
-		<hr>
-		<div class="row">
-          <div class="col-md-12">
-            <h4 id="group-NA">НА</h4>
-            <ul>
-              <li><a class="file-link" href="#">Файл xls</a></li>
-              <li><a class="file-link" href="#">Файл textgrid</a></li>
-            </ul>
-          </div>
-        </div>
-		<hr>
-		<div class="row">
-          <div class="col-md-12">
-            <h4 id="group-NI">НИ</h4>
-            <ul>
-              <li><a class="file-link" href="#">Файл xls</a></li>
-              <li><a class="file-link" href="#">Файл textgrid</a></li>
-            </ul>
-          </div>
-        </div>
-		<hr>
-		<div class="row">
-          <div class="col-md-12">
-            <h4 id="group-TM">ТМ</h4>
-            <ul>
-              <li><a class="file-link" href="#">Файл xls</a></li>
-              <li><a class="file-link" href="#">Файл textgrid</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
+        <!-- Секции для аудиофайлов -->
+        <!-- ВИ -->
+        <p>Ниже представлены аудиофайлы в формате wav и их аннотации в формате xls и textgrid.</p>
+
+        <!-- ВИ -->
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <h4 id="group-VI">ВИ</h4>
+            <ul class="list-unstyled">
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/vUg47e7KV-6QHQ"><i class="fas fa-file-audio file-icon"></i>Файл wav</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/i/xFUO3RGTuETNIA"><i class="fas fa-file-excel file-icon"></i>Файл xlsx</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/Dgf8KJm9mlS5ww"><i class="fas fa-file-alt file-icon"></i>Файл textgrid</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ЛС, НВ1 -->
+        <hr />
+        <div class="row">
+          <div class="col-12">
+            <h4 id="group-LS-NV1">ЛС, НВ1</h4>
+            <ul class="list-unstyled">
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/kGzP50sjoL-pYg"><i class="fas fa-file-audio file-icon"></i>Файл wav</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/i/Kr6S3Uz6sYdY8g"><i class="fas fa-file-excel file-icon"></i>Файл xlsx</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/ZbaCMKt2Ih-6OA"><i class="fas fa-file-alt file-icon"></i>Файл textgrid</a></li>
+            </ul>
+          </div><!-- col-12 -->
+        </div><!-- row -->
+        <hr>
+        <div class="row">
+              <div class="col-12">
+                <h4 id="group-LS-NV2">ЛС, НВ2</h4>
+                <ul class="list-unstyled">
+                  <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/Kbnnjkdn6kQdsA"><i class="fas fa-file-audio file-icon"></i>Файл wav</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/i/Y1lZfd7vRg_wWA"><i class="fas fa-file-excel file-icon"></i>Файл xlsx</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/j2LuH-AtVU36Lg"><i class="fas fa-file-alt file-icon"></i>Файл textgrid</a></li>
+                </ul>
+              </div>
+            </div>
+        <hr>
+        <div class="row">
+              <div class="col-12">
+                <h4 id="group-LS-NV3">ЛС, НВ3</h4>
+                <ul class="list-unstyled">
+                  <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/0sEz0XGEzYm3dw"><i class="fas fa-file-audio file-icon"></i>Файл wav</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/i/OlJtPZcrg3cnUw"><i class="fas fa-file-excel file-icon"></i>Файл xlsx</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/Nv8vki_lFf8Qlw"><i class="fas fa-file-alt file-icon"></i>Файл textgrid</a></li>
+                </ul>
+              </div>
+            </div>
+        <hr>
+        <div class="row">
+              <div class="col-12">
+                <h4 id="group-NA">НА</h4>
+                <ul class="list-unstyled">
+                  <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/oDCRFejU4YZSMQ"><i class="fas fa-file-audio file-icon"></i>Файл wav</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/i/49QczTYxxgBA3w"><i class="fas fa-file-excel file-icon"></i>Файл xlsx</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/Im4dILWj8pGUgg"><i class="fas fa-file-alt file-icon"></i>Файл textgrid</a></li>
+                </ul>
+              </div>
+            </div>
+        <hr>
+        <div class="row">
+              <div class="col-12">
+                <h4 id="group-NI">НИ</h4>
+                <ul class="list-unstyled">
+                  <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/pGxH0RX-nQSrXw"><i class="fas fa-file-audio file-icon"></i>Файл wav</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/i/iX5jHCr_Rrca0w"><i class="fas fa-file-excel file-icon"></i>Файл xlsx</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/59HyZ8MB3H2QHw"><i class="fas fa-file-alt file-icon"></i>Файл textgrid</a></li>
+                </ul>
+              </div>
+            </div>
+        <hr>
+        <div class="row">
+              <div class="col-12">
+                <h4 id="group-TM">ТМ</h4>
+                <ul class="list-unstyled">
+                  <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/43FA9Fr2nDYslQ"><i class="fas fa-file-audio file-icon"></i>Файл wav</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/i/bghmQFO0jYlfTQ"><i class="fas fa-file-excel file-icon"></i>Файл xlsx</a></li>
+              <li><a class="file-link" target="_blank" href="https://disk.yandex.ru/d/kpyHITTOnQ3X6A"><i class="fas fa-file-alt file-icon"></i>Файл textgrid</a></li>
+                </ul>
+              </div>
+            </div>
+
+      </div><!-- col-12 -->
+    </div><!-- row -->
+  </div><!-- container -->
+
+  <!-- Подключение скриптов Bootstrap и jQuery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
